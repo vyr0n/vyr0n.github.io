@@ -1,0 +1,137 @@
+:root{
+  --color-bg: #E5EAEE;
+  --color-header: #4985BD; 
+  --color-footer: #1181a5; 
+  --color-header-cell: #41617E; 
+}
+
+body{
+  background-color: var(--color-bg);
+  /* padding: 5em 0; */
+}
+
+.body-container{
+  height: 100vh;
+  background-color: var(--color-bg);
+  position: relative;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.header-container{
+  display: flex;
+  width: 100%;
+  height: 5em;
+  line-height: 5em;
+  background-color: var(--color-header);
+  justify-content: space-between;
+  padding: 0 4em;
+  border-bottom: 1px solid black;
+}
+
+#name-site{
+  font-size: 2.5em;
+}
+
+.nav-menu{
+ 
+}
+
+
+.main-container{
+  padding: 3em 5em;
+  max-width: calc(1000px - (30px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 3em;
+  padding-bottom: 4em;
+  margin-bottom: 20em;
+}
+/* 
+@media screen and (min-width: 300px){
+  /* .footer-container{
+    position: absolute;
+    bottom: 0;
+  } 
+} */
+
+@media screen and (max-width: 728px){
+  .header-container{
+    flex-direction: column;
+    height: auto;
+  }
+  .nav-menu{
+    width: 100%;
+    position: absolute;
+    top: 5em;
+    left: 0;
+    padding: 0 2em;
+    background-color: var(--color-header-cell); 
+  }
+  .main-container{
+    margin: 2.5em 0;
+  }
+  
+}
+
+@media screen and (max-width: 439px){
+  .nav-menu{
+    top: 10em;
+  }
+}
+
+.title-container{
+  padding: 1em 0;
+
+}
+
+.paragraph-container{
+  line-height: 1.5;
+}
+
+.footer-container{
+  background-color: var(--color-footer);
+  width: 100%;
+  color: white;
+}
+.social-content{
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 480px){
+  .social-content{
+    height: 100px;
+    flex-direction: column;
+    margin: 0 2em;
+    padding: 0 1em;
+  }
+}
+
+.social-item{
+  height: auto;
+  margin: 0 1em;
+  font-size: 1.2em;
+  padding: .5em;
+  border-radius: 15px;
+}
+.social-item:hover{
+  background-color: var(--color-bg);
+  color: black;
+}
+
+.social-link{
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid black;
+}
+.social-link:hover{
+  border-bottom: none;
+}

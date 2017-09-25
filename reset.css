@@ -1,0 +1,35 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+body{
+    font-family: Courier New, Courier, monospace;
+}
+
+*,
+*:after,
+*:before { 
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+img {
+    max-width : 100%;
+}
+
+a {
+    text-decoration : none;
+    color: white;
+}
+
+a:hover {
+    /* text-decoration : underline; */
+    color: black;
+}
+
+li{
+    list-style: none;
+}
